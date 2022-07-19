@@ -83,9 +83,9 @@ const Main = (props) => {
                                         <div>
                                             <span>{article.actor.title}</span>
                                             <span>{article.actor.description}</span>
-                                            <span>{dayjs(article.actor.date.toDate()).format(
+                                            {/* <span>{dayjs(article.actor.date.toDate()).format(
                                                 'DD/MM/YYYY'
-                                            )}</span>
+                                            )}</span> */}
                                         </div>
                                     </a>
                                     <button>
@@ -309,7 +309,9 @@ const SocialCount = styled.ul`
         margin-right: 5px;
         font-size: 12px;
         button{
-            display: flex
+            display: flex;
+            border: none;
+            background-color: white;
         }
     } 
 `;
@@ -323,7 +325,10 @@ const SocialActions = styled.div`
         display: inline-flex;
         align-items: center;
         padding:6px;
+        margin-left: 12px;
         color: #0a66c2;
+        border: none;
+        background-color: white;
         @media (min-width: 768px)
         {
             span{
